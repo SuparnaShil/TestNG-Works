@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-LoanDepertment" class="navigator-link ">
-                    <span>E:\Selenium file\Selenium\TestNGTutorial\testng.xml</span>
+                    <span>C:\Users\Suparna Shil\git\TestNG-Works\TestNGTutorial\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-LoanDepertment" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,6 +110,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-LoanDepertment" title="test.Day1" class="method navigator-link" hash-for-method="Demo2">Demo2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoanDepertment" title="test.Day2" class="method navigator-link" hash-for-method="demo">demo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,6 +140,13 @@
               <span class="class-name">test.Day2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="demo">
+                  </a> <!-- demo -->
+                  <span class="method-name">demo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="demo">
@@ -169,7 +181,7 @@
         </div> <!-- panel LoanDepertment -->
         <div panel-name="test-xml-LoanDepertment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Selenium file\Selenium\TestNGTutorial\testng.xml</span>
+            <span class="header-content">C:\Users\Suparna Shil\git\TestNG-Works\TestNGTutorial\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,6 +194,11 @@
       &lt;class name=&quot;test.Day2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PersonalLoan --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HomeLoan&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.Day2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomeLoan --&gt;
 &lt;/suite&gt; &lt;!-- LoanDepertment --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,6 +211,9 @@
             <ul>
               <li>
                 <span class="test-name">PersonalLoan (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">HomeLoan (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,24 +239,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Demo')
 data.setCell(0, 2, 'test.Day1')
-data.setCell(0, 3, 13);
+data.setCell(0, 3, 12);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'demo')
 data.setCell(1, 2, 'test.Day2')
-data.setCell(1, 3, 7);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Demo2')
-data.setCell(2, 2, 'test.Day1')
-data.setCell(2, 3, 4);
+data.setCell(2, 1, 'demo')
+data.setCell(2, 2, 'test.Day2')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Demo2')
+data.setCell(3, 2, 'test.Day1')
+data.setCell(3, 3, 1);
 window.suiteTableData['LoanDepertment']= { tableData: data, tableDiv: 'times-div-LoanDepertment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 ms</span>
+              <span class="suite-total-time">Total running time: 17 ms</span>
               <div id="times-div-LoanDepertment">
               </div> <!-- times-div-LoanDepertment -->
             </div> <!-- times-div -->
@@ -276,7 +300,11 @@ return data;
               <div class="chronological-class-name">test.Day2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">demo</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demo</span>
+                <span class="method-start">109 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

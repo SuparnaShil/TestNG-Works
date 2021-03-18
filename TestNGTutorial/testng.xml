@@ -7,4 +7,11 @@
       <class name="test.Day2"/>    
     </classes>
   </test> 
+  
+  <test name="HomeLoan">
+  	<classes>
+  		<class name="test.Day3"></class>
+  	</classes>
+  
+  </test>
 </suite> 
