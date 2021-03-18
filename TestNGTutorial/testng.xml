@@ -3,8 +3,20 @@
 <suite name="LoanDepertment">
   <test name="PersonalLoan">
     <classes>
-      <class name="test.Day1"/>
-      <class name="test.Day2"/>    
+    
+      <class name="test.Day2">
+      	<methods>
+      		<include name = "demo1day2"/>
+      	</methods>
+      </class>
+      
+      <class name="test.Day1">
+      	<methods>
+      		<exclude name= "Demo2day1"> </exclude>
+      	</methods>
+      
+      </class>    
+      
     </classes>
   </test> 
   

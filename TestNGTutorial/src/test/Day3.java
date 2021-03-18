@@ -9,6 +9,6 @@ public class Day3 {
 	public void loanFinal()
 
 	{
-		System.out.println("Hello from final loan");
+		System.out.println("Hello from final loan day 3");
 	}
 }
