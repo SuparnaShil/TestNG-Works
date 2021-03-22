@@ -11,4 +11,12 @@ public class Day3 {
 	{
 		System.out.println("Hello from final loan day 3");
 	}
+	
+@Test
+	
+	public void loanFinal2()
+
+	{
+		System.out.println("Hello from final2 loan day 3");
+	}
 }
