@@ -18,11 +18,12 @@ public void loanFinalk()
 	{
 		System.out.println("Hello from final loan day 3");
 	}
-@Test
-public void loanFinalkk()
+@Test@Parameters ({"NewURL"})
+public void loanFinalkk(String urlName)
 
 {
 	System.out.println("Hello from final loan day 3");
+	System.out.println(urlName);
 }
 @Test(dependsOnMethods= {"loanFinalww","loanFinall"})
 public void loanFinalw()
@@ -31,12 +32,13 @@ public void loanFinalw()
 	System.out.println("Hello from final loan day 3   11111");
 }
 
-@Parameters ({"URL"})
+@Parameters ({"URL","pass"})
 @Test
-public void loanFinalww(String urlName)
+public void loanFinalww(String urlName,String password)
 
 	{
 		System.out.println("Hello from final2 loan day 3   22222");
 		System.out.println(urlName);
+		System.out.println(password);
 	}
 }

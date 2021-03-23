@@ -11,9 +11,17 @@
 	</groups>-->	
   	<classes>
   	    <class name="test.Day1"/>
-  		<class name="test.Day3"/>
+  		
   		<class name="test.Day2"/>
   	</classes>
+</test>
+
+<test name="New test">
+<parameter name="NewURL" value="www.youtube.com"></parameter>
+<parameter name="pass" value="12345"></parameter>
+ 	<classes>
+ 		<class name="test.Day3"></class>
+ 	</classes>
 </test>
 
 </suite> 
