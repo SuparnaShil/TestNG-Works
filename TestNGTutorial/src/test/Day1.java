@@ -26,7 +26,7 @@ public class Day1 {
 		System.out.println("hello from day1 demo1");
 		
 	}
-	@Test
+	@Test(groups={"smoke"})
 	public void Demo1day12(){
 		
 		System.out.println("hello from day1 demo1");

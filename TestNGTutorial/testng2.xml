@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing">
+
+<parameter name="URL" value="www.google.com"></parameter>
+<test name="Regression">
+<!--  <groups>
+		<run>
+			<include name= "smoke"/>      group runner
+		</run>
+	</groups>-->	
+  	<classes>
+  	    <class name="test.Day1"/>
+  		<class name="test.Day3"/>
+  		<class name="test.Day2"/>
+  	</classes>
+</test>
+
+</suite> 

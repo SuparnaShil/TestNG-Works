@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class Day2 {
 	
-	@Test
+	@Test(timeOut = 4000)   //set time to wait until this time before showing any error message
 	public void demo1day2() {
 		System.out.println("Hello from day 2");
 	}
@@ -17,11 +17,12 @@ public class Day2 {
 	public void demo2day2() {
 		System.out.println("Hello from day 2 after test");
 	}
-	@Test
+	//<!-- forcely not executed -->
+	@Test(enabled = false)  
 	public void demo3day2() {
-		System.out.println("Hello from day 2");
+		System.out.println("Hello from day 2 executed");
 	}
-	@Test
+	@Test(groups={"smoke"})
 	public void demo4day2() {
 		System.out.println("Hello from day 2");
 	}
