@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testing]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="www.google.com"/>
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="test.Day1">
+        <methods>
+          <include name="EveryTime"/>
+          <include name="Demo2day1"/>
+          <include name="Demo3day1"/>
+          <include name="Demo5day1"/>
+          <include name="Demo4day1"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Testing] -->

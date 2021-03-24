@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Testing" class="navigator-link">
-              <span class="suite-name border-passed">Testing</span>
+              <span class="suite-name border-failed">Testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Testing" class="hide-methods failed suite-Testing"> (hide)</a> <!-- hide-methods failed suite-Testing -->
+                      <a href="#" panel-name="suite-Testing" class="show-methods failed suite-Testing"> (show)</a> <!-- show-methods failed suite-Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="test.Day1" class="method navigator-link" hash-for-method="Demo3day1">Demo3day1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Testing -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +129,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testing" title="test.Day1" class="method navigator-link" hash-for-method="Demo1day12">Demo1day12</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testing" title="test.Day1" class="method navigator-link" hash-for-method="Demo3day1">Demo3day1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,17 +168,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Secondname, pass2)">login(Secondname, pass2)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Thirdname, pass3)">login(Thirdname, pass3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Fristname, pass1)">login(Fristname, pass1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Secondname, pass2)">login(Secondname, pass2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Testing -->
@@ -184,6 +193,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Testing" class="panel Testing">
+          <div class="suite-Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.Day1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Demo3day1">
+                  </a> <!-- Demo3day1 -->
+                  <span class="method-name">Demo3day1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.Day1.Demo3day1(Day1.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-failed -->
+          <div class="suite-Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.Day2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="demo1day2">
+                  </a> <!-- demo1day2 -->
+                  <span class="method-name">demo1day2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demo4day2">
+                  </a> <!-- demo4day2 -->
+                  <span class="method-name">demo4day2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing-class-passed -->
           <div class="suite-Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -229,14 +280,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Secondname, pass2)">
-                  </a> <!-- login(Secondname, pass2) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Secondname, pass2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="login(Thirdname, pass3)">
                   </a> <!-- login(Thirdname, pass3) -->
                   <span class="method-name">login</span>
@@ -249,6 +292,14 @@
                   </a> <!-- login(Fristname, pass1) -->
                   <span class="method-name">login</span>
                   <span class="parameters">(Fristname, pass1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(Secondname, pass2)">
+                  </a> <!-- login(Secondname, pass2) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(Secondname, pass2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,35 +331,6 @@
                   <span class="method-name">Demo1day12</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Demo3day1">
-                  </a> <!-- Demo3day1 -->
-                  <span class="method-name">Demo3day1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testing-class-passed -->
-          <div class="suite-Testing-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.Day2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="demo1day2">
-                  </a> <!-- demo1day2 -->
-                  <span class="method-name">demo1day2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="demo4day2">
-                  </a> <!-- demo4day2 -->
-                  <span class="method-name">demo4day2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Testing-class-passed -->
         </div> <!-- panel Testing -->
@@ -322,6 +344,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;URL&quot; value=&quot;www.google.com&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.Day1&quot;/&gt;
@@ -393,66 +418,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Demo1day1')
-data.setCell(0, 2, 'test.Day1')
-data.setCell(0, 3, 10);
+data.setCell(0, 1, 'demo1day2')
+data.setCell(0, 2, 'test.Day2')
+data.setCell(0, 3, 21);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'demo1day2')
-data.setCell(1, 2, 'test.Day2')
-data.setCell(1, 3, 10);
+data.setCell(1, 1, 'Demo1day12')
+data.setCell(1, 2, 'test.Day1')
+data.setCell(1, 3, 11);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loanFinalw')
-data.setCell(2, 2, 'test.Day3')
-data.setCell(2, 3, 5);
+data.setCell(2, 1, 'Demo1day1')
+data.setCell(2, 2, 'test.Day1')
+data.setCell(2, 3, 8);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'test.Day3')
-data.setCell(3, 3, 4);
+data.setCell(3, 1, 'Demo3day1')
+data.setCell(3, 2, 'test.Day1')
+data.setCell(3, 3, 7);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login')
+data.setCell(4, 1, 'loanFinalww')
 data.setCell(4, 2, 'test.Day3')
-data.setCell(4, 3, 4);
+data.setCell(4, 3, 6);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loanFinalkk')
-data.setCell(5, 2, 'test.Day3')
-data.setCell(5, 3, 3);
+data.setCell(5, 1, 'demo4day2')
+data.setCell(5, 2, 'test.Day2')
+data.setCell(5, 3, 5);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loanFinalk')
+data.setCell(6, 1, 'login')
 data.setCell(6, 2, 'test.Day3')
-data.setCell(6, 3, 3);
+data.setCell(6, 3, 5);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loanFinall')
+data.setCell(7, 1, 'loanFinalk')
 data.setCell(7, 2, 'test.Day3')
 data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Demo3day1')
-data.setCell(8, 2, 'test.Day1')
-data.setCell(8, 3, 2);
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'test.Day3')
+data.setCell(8, 3, 3);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Demo1day11')
-data.setCell(9, 2, 'test.Day1')
-data.setCell(9, 3, 2);
+data.setCell(9, 1, 'loanFinalw')
+data.setCell(9, 2, 'test.Day3')
+data.setCell(9, 3, 3);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'demo4day2')
-data.setCell(10, 2, 'test.Day2')
-data.setCell(10, 3, 2);
+data.setCell(10, 1, 'loanFinall')
+data.setCell(10, 2, 'test.Day3')
+data.setCell(10, 3, 3);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Demo1day12')
+data.setCell(11, 1, 'Demo1day11')
 data.setCell(11, 2, 'test.Day1')
-data.setCell(11, 3, 1);
+data.setCell(11, 3, 2);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'login')
+data.setCell(12, 1, 'loanFinalkk')
 data.setCell(12, 2, 'test.Day3')
-data.setCell(12, 3, 1);
+data.setCell(12, 3, 2);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'loanFinalww')
+data.setCell(13, 1, 'login')
 data.setCell(13, 2, 'test.Day3')
-data.setCell(13, 3, 1);
+data.setCell(13, 3, 2);
 window.suiteTableData['Testing']= { tableData: data, tableDiv: 'times-div-Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 ms</span>
+              <span class="suite-total-time">Total running time: 81 ms</span>
               <div id="times-div-Testing">
               </div> <!-- times-div-Testing -->
             </div> <!-- times-div -->
@@ -492,96 +517,98 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Demo2day1</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">86 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Demo1day1</span>
-                <span class="method-start">89 ms</span>
+                <span class="method-start">52 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Demo1day11</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">67 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">111 ms</span>
+                <span class="method-start">72 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Demo1day12</span>
-                <span class="method-start">112 ms</span>
+                <span class="method-start">73 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">91 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Demo3day1</span>
-                <span class="method-start">116 ms</span>
+                <span class="method-start">92 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Day2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">demo1day2</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">demo4day2</span>
-                <span class="method-start">136 ms</span>
+                <span class="method-start">137 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">demo2day2</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-start">144 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loanFinalkk(www.youtube.com)</span>
-                <span class="method-start">251 ms</span>
+                <span class="method-start">247 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loanFinall</span>
-                <span class="method-start">258 ms</span>
+                <span class="method-start">253 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loanFinalww(www.google.com, 12345)</span>
-                <span class="method-start">262 ms</span>
+                <span class="method-start">260 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login(Fristname, pass1)</span>
-                <span class="method-start">268 ms</span>
+                <span class="method-start">277 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login(Secondname, pass2)</span>
-                <span class="method-start">279 ms</span>
+                <span class="method-start">289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login(Thirdname, pass3)</span>
-                <span class="method-start">288 ms</span>
+                <span class="method-start">296 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loanFinalk</span>
-                <span class="method-start">294 ms</span>
+                <span class="method-start">306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loanFinalw</span>
-                <span class="method-start">299 ms</span>
+                <span class="method-start">320 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">Demo4day1</span>
-                <span class="method-start">329 ms</span>
+                <span class="method-start">351 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
