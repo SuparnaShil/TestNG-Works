@@ -15,7 +15,7 @@ public class Listeners implements ITestListener{     //click on ITestListeners j
 	  }
 	public void onTestFailure(ITestResult result) {
 	    // not implemented
-		System.out.println("Listener execution failed" +" "+ result.getName());
+		System.out.println("Listener execution failed" +"  "+ result.getName());
 	  }
 	
 }
