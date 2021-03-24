@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="12" passed="11" failed="0" skipped="0">
+<testng-results ignored="1" total="15" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-23T16:54:03 BDT" name="Testing" finished-at="2021-03-23T16:54:03 BDT" duration-ms="261">
+  <suite started-at="2021-03-24T12:38:05 BDT" name="Testing" finished-at="2021-03-24T12:38:05 BDT" duration-ms="277">
     <groups>
       <group name="smoke">
         <method signature="Day1.Demo1day12()[pri:0, instance:test.Day1@70be0a2b]" name="Demo1day12" class="test.Day1"/>
         <method signature="Day2.demo4day2()[pri:0, instance:test.Day2@2133814f]" name="demo4day2" class="test.Day2"/>
-        <method signature="Day3.loanFinall()[pri:0, instance:test.Day3@4df50bcc]" name="loanFinall" class="test.Day3"/>
+        <method signature="Day3.loanFinall()[pri:0, instance:test.Day3@769e7ee8]" name="loanFinall" class="test.Day3"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-03-23T16:54:03 BDT" name="Regression" finished-at="2021-03-23T16:54:03 BDT" duration-ms="123">
+    <test started-at="2021-03-24T12:38:05 BDT" name="Regression" finished-at="2021-03-24T12:38:05 BDT" duration-ms="112">
       <class name="test.Day1">
-        <test-method is-config="true" signature="Demo2day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo2day1" finished-at="2021-03-23T16:54:03 BDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Demo2day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="Demo2day1" finished-at="2021-03-24T12:38:05 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo2day1 -->
-        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="EveryTime" finished-at="2021-03-23T16:54:03 BDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="EveryTime" finished-at="2021-03-24T12:38:05 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EveryTime -->
-        <test-method signature="Demo1day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo1day1" finished-at="2021-03-23T16:54:03 BDT" duration-ms="9" status="PASS">
+        <test-method signature="Demo1day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="Demo1day1" finished-at="2021-03-24T12:38:05 BDT" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo1day1 -->
-        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="EveryTime" finished-at="2021-03-23T16:54:03 BDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="EveryTime" finished-at="2021-03-24T12:38:05 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EveryTime -->
-        <test-method signature="Demo1day11()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo1day11" finished-at="2021-03-23T16:54:03 BDT" duration-ms="2" status="PASS">
+        <test-method signature="Demo1day11()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="Demo1day11" finished-at="2021-03-24T12:38:05 BDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo1day11 -->
-        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="EveryTime" finished-at="2021-03-23T16:54:03 BDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="EveryTime" finished-at="2021-03-24T12:38:05 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EveryTime -->
-        <test-method signature="Demo1day12()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo1day12" finished-at="2021-03-23T16:54:03 BDT" duration-ms="3" status="PASS">
+        <test-method signature="Demo1day12()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="Demo1day12" finished-at="2021-03-24T12:38:05 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo1day12 -->
-        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="EveryTime" finished-at="2021-03-23T16:54:03 BDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="EveryTime()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="EveryTime" finished-at="2021-03-24T12:38:05 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EveryTime -->
-        <test-method signature="Demo3day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo3day1" finished-at="2021-03-23T16:54:03 BDT" duration-ms="3" status="PASS">
+        <test-method signature="Demo3day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="Demo3day1" finished-at="2021-03-24T12:38:05 BDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo3day1 -->
       </class> <!-- test.Day1 -->
       <class name="test.Day2">
-        <test-method signature="demo1day2()[pri:0, instance:test.Day2@2133814f]" started-at="2021-03-23T16:54:03 BDT" name="demo1day2" finished-at="2021-03-23T16:54:03 BDT" duration-ms="12" status="PASS">
+        <test-method signature="demo1day2()[pri:0, instance:test.Day2@2133814f]" started-at="2021-03-24T12:38:05 BDT" name="demo1day2" finished-at="2021-03-24T12:38:05 BDT" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo1day2 -->
-        <test-method signature="demo4day2()[pri:0, instance:test.Day2@2133814f]" started-at="2021-03-23T16:54:03 BDT" name="demo4day2" finished-at="2021-03-23T16:54:03 BDT" duration-ms="13" status="PASS">
+        <test-method signature="demo4day2()[pri:0, instance:test.Day2@2133814f]" started-at="2021-03-24T12:38:05 BDT" name="demo4day2" finished-at="2021-03-24T12:38:05 BDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo4day2 -->
-        <test-method is-config="true" signature="demo2day2()[pri:0, instance:test.Day2@2133814f]" started-at="2021-03-23T16:54:03 BDT" name="demo2day2" finished-at="2021-03-23T16:54:03 BDT" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="demo2day2()[pri:0, instance:test.Day2@2133814f]" started-at="2021-03-24T12:38:05 BDT" name="demo2day2" finished-at="2021-03-24T12:38:05 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo2day2 -->
       </class> <!-- test.Day2 -->
     </test> <!-- Regression -->
-    <test started-at="2021-03-23T16:54:03 BDT" name="New test" finished-at="2021-03-23T16:54:03 BDT" duration-ms="39">
+    <test started-at="2021-03-24T12:38:05 BDT" name="New test" finished-at="2021-03-24T12:38:05 BDT" duration-ms="61">
       <class name="test.Day1">
-        <test-method is-config="true" signature="Demo5day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo5day1" finished-at="2021-03-23T16:54:03 BDT" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="Demo5day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:05 BDT" name="Demo5day1" finished-at="2021-03-24T12:38:05 BDT" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo5day1 -->
-        <test-method is-config="true" signature="Demo4day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-23T16:54:03 BDT" name="Demo4day1" finished-at="2021-03-23T16:54:03 BDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Demo4day1()[pri:0, instance:test.Day1@70be0a2b]" started-at="2021-03-24T12:38:06 BDT" name="Demo4day1" finished-at="2021-03-24T12:38:06 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo4day1 -->
       </class> <!-- test.Day1 -->
       <class name="test.Day3">
-        <test-method signature="loanFinalkk(java.lang.String)[pri:0, instance:test.Day3@4df50bcc]" started-at="2021-03-23T16:54:03 BDT" name="loanFinalkk" finished-at="2021-03-23T16:54:03 BDT" duration-ms="2" status="PASS">
+        <test-method signature="loanFinalkk(java.lang.String)[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="loanFinalkk" finished-at="2021-03-24T12:38:05 BDT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,31 +87,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanFinalkk -->
-        <test-method signature="loanFinall()[pri:0, instance:test.Day3@4df50bcc]" started-at="2021-03-23T16:54:03 BDT" name="loanFinall" finished-at="2021-03-23T16:54:03 BDT" duration-ms="2" status="PASS">
+        <test-method signature="loanFinall()[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="loanFinall" finished-at="2021-03-24T12:38:05 BDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanFinall -->
-        <test-method signature="loanFinalww(java.lang.String, java.lang.String)[pri:0, instance:test.Day3@4df50bcc]" started-at="2021-03-23T16:54:03 BDT" name="loanFinalww" finished-at="2021-03-23T16:54:03 BDT" duration-ms="4" status="PASS">
+        <test-method signature="loanFinalww(java.lang.String, java.lang.String)[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="loanFinalww" finished-at="2021-03-24T12:38:05 BDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[12345]]>
+                <![CDATA[www.google.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[www.google.com]]>
+                <![CDATA[12345]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanFinalww -->
-        <test-method signature="loanFinalk()[pri:0, instance:test.Day3@4df50bcc]" started-at="2021-03-23T16:54:03 BDT" name="loanFinalk" finished-at="2021-03-23T16:54:03 BDT" duration-ms="2" status="PASS">
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="login" data-provider="getData" finished-at="2021-03-24T12:38:05 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fristname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="login" data-provider="getData" finished-at="2021-03-24T12:38:05 BDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Secondname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="login" data-provider="getData" finished-at="2021-03-24T12:38:05 BDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Thirdname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="loanFinalk()[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="loanFinalk" finished-at="2021-03-24T12:38:05 BDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanFinalk -->
-        <test-method signature="loanFinalw()[pri:0, instance:test.Day3@4df50bcc]" started-at="2021-03-23T16:54:03 BDT" name="loanFinalw" finished-at="2021-03-23T16:54:03 BDT" depends-on-methods="test.Day3.loanFinall, test.Day3.loanFinalww" duration-ms="2" status="PASS">
+        <test-method signature="loanFinalw()[pri:0, instance:test.Day3@769e7ee8]" started-at="2021-03-24T12:38:05 BDT" name="loanFinalw" finished-at="2021-03-24T12:38:05 BDT" depends-on-methods="test.Day3.loanFinall, test.Day3.loanFinalww" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanFinalw -->
