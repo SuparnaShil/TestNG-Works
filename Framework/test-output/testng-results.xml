@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-24T20:11:29 BDT" name="Default suite" finished-at="2021-03-24T20:11:48 BDT" duration-ms="18918">
+    <groups>
+    </groups>
+    <test started-at="2021-03-24T20:11:29 BDT" name="Default test" finished-at="2021-03-24T20:11:48 BDT" duration-ms="18918">
+      <class name="datddriven.Annotations">
+        <test-method is-config="true" signature="Cookies()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:29 BDT" name="Cookies" finished-at="2021-03-24T20:11:29 BDT" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cookies -->
+        <test-method signature="login()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:29 BDT" name="login" finished-at="2021-03-24T20:11:39 BDT" duration-ms="9331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Reportadding" finished-at="2021-03-24T20:11:39 BDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method signature="software()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="software" finished-at="2021-03-24T20:11:39 BDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- software -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Reportadding" finished-at="2021-03-24T20:11:39 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method signature="Userid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Userid" data-provider="getData" finished-at="2021-03-24T20:11:39 BDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1abcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1xyz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1dsaf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Userid -->
+        <test-method signature="Userid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Userid" data-provider="getData" finished-at="2021-03-24T20:11:39 BDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2abcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2xyz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2dsaf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Userid -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Reportadding" finished-at="2021-03-24T20:11:39 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Reportadding" finished-at="2021-03-24T20:11:39 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method signature="Userid(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Userid" data-provider="getData" finished-at="2021-03-24T20:11:39 BDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3abcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3xyz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3dsaf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Userid -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="Reportadding" finished-at="2021-03-24T20:11:39 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method signature="UseridGeneration()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:39 BDT" name="UseridGeneration" finished-at="2021-03-24T20:11:48 BDT" duration-ms="9461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UseridGeneration -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:48 BDT" name="Reportadding" finished-at="2021-03-24T20:11:48 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method is-config="true" signature="Cookiesclose()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:48 BDT" name="Cookiesclose" finished-at="2021-03-24T20:11:48 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cookiesclose -->
+        <test-method is-config="true" signature="deinstallsoftware()[pri:0, instance:datddriven.Annotations@7219ec67]" started-at="2021-03-24T20:11:48 BDT" name="deinstallsoftware" finished-at="2021-03-24T20:11:48 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deinstallsoftware -->
+      </class> <!-- datddriven.Annotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

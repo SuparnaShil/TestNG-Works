@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Testing" parallel = "tests" thread-count = "2">
+<suite name="Testing" parallel = "tests" thread-count = "2">    <!-- Parallel running of tests, count is define the number of methods open at a time -->
 
 <listeners>
 													<!-- set the path of listener -->
@@ -15,7 +15,7 @@
 		</run>
 	</groups>-->	
   	<classes>
-  	    <class name="test.Day1"/>
+  	    <class name="test.Day1"/> 
   		
   		<class name="test.Day2"/>
   	</classes>
