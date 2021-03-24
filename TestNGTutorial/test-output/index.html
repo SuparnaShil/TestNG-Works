@@ -168,12 +168,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Thirdname, pass3)">login(Thirdname, pass3)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Fristname, pass1)">login(Fristname, pass1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Fristname, pass1)">login(Fristname, pass1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Testing" title="test.Day3" class="method navigator-link" hash-for-method="login(Thirdname, pass3)">login(Thirdname, pass3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -207,7 +207,11 @@
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at test.Day1.Demo3day1(Day1.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 31 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -280,18 +284,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Thirdname, pass3)">
-                  </a> <!-- login(Thirdname, pass3) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Thirdname, pass3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="login(Fristname, pass1)">
                   </a> <!-- login(Fristname, pass1) -->
                   <span class="method-name">login</span>
                   <span class="parameters">(Fristname, pass1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(Thirdname, pass3)">
+                  </a> <!-- login(Thirdname, pass3) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(Thirdname, pass3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -342,18 +346,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;URL&quot; value=&quot;www.google.com&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;test.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.Day1&quot;/&gt;
       &lt;class name=&quot;test.Day2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;New test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;New test&quot;&gt;
     &lt;parameter name=&quot;pass&quot; value=&quot;12345&quot;/&gt;
     &lt;parameter name=&quot;NewURL&quot; value=&quot;www.youtube.com&quot;/&gt;
     &lt;classes&gt;
@@ -418,66 +422,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'demo1day2')
-data.setCell(0, 2, 'test.Day2')
-data.setCell(0, 3, 21);
+data.setCell(0, 1, 'loanFinalkk')
+data.setCell(0, 2, 'test.Day3')
+data.setCell(0, 3, 13);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Demo1day12')
+data.setCell(1, 1, 'Demo1day1')
 data.setCell(1, 2, 'test.Day1')
-data.setCell(1, 3, 11);
+data.setCell(1, 3, 12);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Demo1day1')
+data.setCell(2, 1, 'Demo3day1')
 data.setCell(2, 2, 'test.Day1')
-data.setCell(2, 3, 8);
+data.setCell(2, 3, 12);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Demo3day1')
-data.setCell(3, 2, 'test.Day1')
-data.setCell(3, 3, 7);
+data.setCell(3, 1, 'loanFinall')
+data.setCell(3, 2, 'test.Day3')
+data.setCell(3, 3, 11);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loanFinalww')
-data.setCell(4, 2, 'test.Day3')
-data.setCell(4, 3, 6);
+data.setCell(4, 1, 'demo1day2')
+data.setCell(4, 2, 'test.Day2')
+data.setCell(4, 3, 8);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'demo4day2')
-data.setCell(5, 2, 'test.Day2')
-data.setCell(5, 3, 5);
+data.setCell(5, 1, 'Demo1day11')
+data.setCell(5, 2, 'test.Day1')
+data.setCell(5, 3, 6);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'login')
 data.setCell(6, 2, 'test.Day3')
 data.setCell(6, 3, 5);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loanFinalk')
-data.setCell(7, 2, 'test.Day3')
+data.setCell(7, 1, 'Demo1day12')
+data.setCell(7, 2, 'test.Day1')
 data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'login')
 data.setCell(8, 2, 'test.Day3')
 data.setCell(8, 3, 3);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loanFinalw')
+data.setCell(9, 1, 'loanFinalww')
 data.setCell(9, 2, 'test.Day3')
 data.setCell(9, 3, 3);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'loanFinall')
-data.setCell(10, 2, 'test.Day3')
-data.setCell(10, 3, 3);
+data.setCell(10, 1, 'demo4day2')
+data.setCell(10, 2, 'test.Day2')
+data.setCell(10, 3, 2);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Demo1day11')
-data.setCell(11, 2, 'test.Day1')
+data.setCell(11, 1, 'login')
+data.setCell(11, 2, 'test.Day3')
 data.setCell(11, 3, 2);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'loanFinalkk')
+data.setCell(12, 1, 'loanFinalw')
 data.setCell(12, 2, 'test.Day3')
 data.setCell(12, 3, 2);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'login')
+data.setCell(13, 1, 'loanFinalk')
 data.setCell(13, 2, 'test.Day3')
-data.setCell(13, 3, 2);
+data.setCell(13, 3, 1);
 window.suiteTableData['Testing']= { tableData: data, tableDiv: 'times-div-Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 81 ms</span>
+              <span class="suite-total-time">Total running time: 182 ms</span>
               <div id="times-div-Testing">
               </div> <!-- times-div-Testing -->
             </div> <!-- times-div -->
@@ -517,98 +521,134 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Demo2day1</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">76 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loanFinalkk(www.youtube.com)</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Demo1day1</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">79 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loanFinall</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">66 ms</span>
+                <span class="method-start">127 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loanFinalww(www.google.com, 12345)</span>
+                <span class="method-start">130 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Demo1day11</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">135 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login(Fristname, pass1)</span>
+                <span class="method-start">145 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">72 ms</span>
+                <span class="method-start">147 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Demo1day12</span>
-                <span class="method-start">73 ms</span>
+                <span class="method-start">148 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login(Secondname, pass2)</span>
+                <span class="method-start">151 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">EveryTime</span>
-                <span class="method-start">91 ms</span>
+                <span class="method-start">154 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Demo3day1</span>
-                <span class="method-start">92 ms</span>
+                <span class="method-start">155 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login(Thirdname, pass3)</span>
+                <span class="method-start">160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loanFinalk</span>
+                <span class="method-start">170 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Day2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">demo1day2</span>
-                <span class="method-start">112 ms</span>
+                <span class="method-start">187 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">demo4day2</span>
-                <span class="method-start">137 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">demo2day2</span>
-                <span class="method-start">144 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Day3</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">loanFinalkk(www.youtube.com)</span>
-                <span class="method-start">247 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loanFinall</span>
-                <span class="method-start">253 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loanFinalww(www.google.com, 12345)</span>
-                <span class="method-start">260 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login(Fristname, pass1)</span>
-                <span class="method-start">277 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login(Secondname, pass2)</span>
-                <span class="method-start">289 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login(Thirdname, pass3)</span>
-                <span class="method-start">296 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loanFinalk</span>
-                <span class="method-start">306 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">loanFinalw</span>
-                <span class="method-start">320 ms</span>
+                <span class="method-start">188 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Day2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">demo4day2</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">demo2day2</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Day1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">Demo4day1</span>
-                <span class="method-start">351 ms</span>
+                <span class="method-start">337 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
